@@ -1,0 +1,2 @@
+val df3 = spark.read.option("delimiter", ",").option("header", "true").csv("s3a:///kmor/customer-100.csv")
+df3.show()
