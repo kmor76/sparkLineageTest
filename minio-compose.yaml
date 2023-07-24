@@ -6,6 +6,8 @@ services:
     environment:
       AWS_ACCESS_KEY_ID: CR5JHr9b5MF7sE8Ga06K
       AWS_SECRET_ACCESS_KEY: jhP7SlTMigczfXQDtvqnAwOnTce7MpyXOKpTjeYi
+    volumes:
+      - ./data:/tmp/data/
     command: sleep 360000
   minio:
     image: minio/minio
