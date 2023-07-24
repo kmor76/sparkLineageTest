@@ -4,8 +4,8 @@ services:
   spark:
     image: kmor76/spark:3.4.0_s3
     environment:
-      AWS_ACCESS_KEY_ID: CR5JHr9b5MF7sE8Ga06K
-      AWS_SECRET_ACCESS_KEY: jhP7SlTMigczfXQDtvqnAwOnTce7MpyXOKpTjeYi
+      AWS_ACCESS_KEY_ID: rqaYgpDgQgs9utk069Qh
+      AWS_SECRET_ACCESS_KEY: SmMJN9ZCbUF1qhF2mOEJVk5Su3NPMxdxTzsJkjJE
     volumes:
       - ./data:/tmp/data/
     command: sleep 360000
