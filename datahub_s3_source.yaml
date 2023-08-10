@@ -1,0 +1,14 @@
+source:
+    type: s3
+    config:
+        path_specs:
+            - include: 's3://kmor/*.parquet'
+            - include: 's3://kmor/userdata1_filtered.parquet/*.parquet'
+        aws_config:
+            aws_access_key_id: lRzQo7Nr5Jg36n3nimDI
+            aws_secret_access_key: jA5j0Yhp9LY3I9E7WwCsKYDOV738COT53pT8S4vI
+            aws_endpoint_url: 'http://minio:9000'
+            aws_region: gpb
+        env: PROD
+        profiling:
+            enabled: false
